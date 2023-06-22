@@ -1,0 +1,80 @@
+npx create-react-app horror-tales-app
+
+cd horror-tales-app
+
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Chapter from './components/Chapter';
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/chapter/:id" component={Chapter} />
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
+
+function Home() {
+  const [chapters, setChapters] = useState([]);
+
+  const { register, handleSubmit } = useForm();
+
+  const onSubmit = (data) => {
+    const newChapter = {
+      title: data.chapterTitle,
+      content: '',
+    };
+    setChapters([...chapters, newChapter]);
+  };
+
+  return (
+    <div>
+      <h1>Horror Tales</h1>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <input type="text" {...register('chapterTitle')} placeholder="Chapter Title" />
+        <button type="submit">Create Chapter</button>
+      </form>
+      <ul>
+        {chapters.map((chapter, index) => (
+          <li key={index}>
+            <Link to={`/chapter/${index + 1}`}>{chapter.title}</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default Home;
+
+import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
+
+function Chapter() {
+  const { id } = useParams();
+  const chapterIndex = parseInt(id) - 1;
+
+  const [chapter, setChapter] = useState({ title: '', content: '' });
+
+  const handleContentChange = (e) => {
+    setChapter({ ...chapter, content: e.target.value });
+  };
+
+  return (
+    <div>
+      <h2>Chapter {id}</h2>
+      <h3>{chapter.title}</h3>
+      <textarea value={chapter.content} onChange={handleContentChange} rows={10} cols={50
+
