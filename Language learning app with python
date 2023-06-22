@@ -1,0 +1,39 @@
+import random
+
+# Dictionary of words and their translations
+words = {
+    "apple": "pomme",
+    "banana": "banane",
+    "cat": "chat",
+    "dog": "chien",
+    "house": "maison"
+}
+
+def get_random_word():
+    """Returns a random word from the dictionary."""
+    return random.choice(list(words.keys()))
+
+def language_learning_app():
+    print("Welcome to the Language Learning App!")
+    print("Translate the following words from English to French.")
+
+    score = 0
+    total_questions = 5
+
+    for _ in range(total_questions):
+        word = get_random_word()
+        translation = words[word]
+
+        print("\nWhat is the translation of '{}'?".format(word))
+        user_translation = input("Translation: ")
+
+        if user_translation.lower() == translation:
+            print("Correct!")
+            score += 1
+        else:
+            print("Incorrect. The correct translation is '{}'.".format(translation))
+
+    print("\nQuiz completed!")
+    print("You scored {}/{}.".format(score, total_questions))
+
+language_learning_app()
