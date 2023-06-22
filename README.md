@@ -55,9 +55,9 @@
   <section id="services">
     <h2>Our Services</h2>
     <ul>
-      <li>Provide consultation services 1</li>
-      <li>Get the market to your home 2</li>
-      <li>Take your orders and deliver the exact things you need 3</li>
+      <li>Provide consultation services </li>
+      <li>Get the market to your home </li>
+      <li>Take your orders and deliver the exact things you need </li>
       <!-- Add more services as needed -->
     </ul>
   </section>
