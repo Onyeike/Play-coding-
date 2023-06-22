@@ -1,91 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gojic Incorporated - Professional Business Profile</title>
+  <title>GOJIC INCORPORATED</title>
   <style>
+    /* CSS styles for your website */
+    /* You can customize these styles to match your branding */
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
+      margin: 0;
+      padding: 0;
     }
-
-    h1 {
-      color: #333;
+    header {
+      background-color: #f0f0f0;
+      padding: 20px;
       text-align: center;
     }
-
-    p {
-      margin-bottom: 10px;
-    }
-
-    .profile-image {
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
       text-align: center;
-      margin-bottom: 20px;
     }
-
-    .company-info {
-      margin-bottom: 20px;
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 10px;
     }
-
-    .company-info p {
-      font-weight: bold;
+    section {
+      padding: 20px;
+      text-align: center;
     }
-
-    .contact-info {
-      margin-bottom: 20px;
-    }
-
-    .contact-info p {
-      margin-bottom: 5px;
-    }
-
-    .contact-info p span {
-      font-weight: bold;
-    }
-
-    .about-section {
-      margin-bottom: 20px;
-    }
-
-    .about-section h2 {
-      margin-bottom: 10px;
-    }
-
-    .about-section p {
-      line-height: 1.5;
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <div class="profile-image">
-    <img src="company_logo.png" alt="Gojic Incorporated Logo">
-  </div>
-
-  <h1>Gojic Incorporated</h1>
-
-  <div class="company-info">
-    <p>Industry: Software Development</p>
-    <p>Founded: 20XX</p>
-    <p>Location: City, Country</p>
-    <p>Website: <a href="http://www.gojicinc.com">www.gojicinc.com</a></p>
-  </div>
-
-  <div class="contact-info">
-    <p><span>Email:</span> info@gojicinc.com</p>
-    <p><span>Phone:</span> +1 (XXX) XXX-XXXX</p>
-    <p><span>Address:</span> 123 Main Street, City, Country</p>
-  </div>
-
-  <div class="about-section">
+  <header>
+    <h1>Welcome to GOJIC INCORPORATED</h1>
+    <p>Your Trusted Business Partner</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="about">
     <h2>About Us</h2>
-    <p>
-      Gojic Incorporated is a leading software development company specializing in creating innovative solutions for businesses. With a team of highly skilled professionals, we deliver cutting-edge software products to meet the unique needs of our clients.
-    </p>
-    <p>
-      Our expertise lies in developing custom software applications, mobile apps, and web solutions that are tailored to streamline operations and enhance business growth. We leverage the latest technologies and industry best practices to ensure the highest quality and optimal performance.
-    </p>
-    <p>
-      At Gojic Incorporated, we prioritize client satisfaction and work closely with our clients to understand their requirements and provide personalized solutions. Our commitment to excellence, attention to detail, and timely project delivery have earned us a reputation as a trusted partner in the software development industry.
-    </p>
-  </div>
+    <p>GOJIC INCORPORATED is a leading provider of innovative solutions for businesses worldwide. With a team of experienced professionals and a customer-centric approach, we strive to deliver high-quality products and services that meet the unique needs of our clients.</p>
+  </section>
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Service 1</li>
+      <li>Service 2</li>
+      <li>Service 3</li>
+      <!-- Add more services as needed -->
+    </ul>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or inquiries, feel free to reach out to us.</p>
+    <p>Email: info@gojic.com</p>
+    <p>Phone: 123-456-7890</p>
+  </section>
+  <footer>
+    <p>&copy; 2023 GOJIC INCORPORATED. All rights reserved.</p>
+  </footer>
 </body>
 </html>
