@@ -55,17 +55,17 @@
   <section id="services">
     <h2>Our Services</h2>
     <ul>
-      <li>Service 1</li>
-      <li>Service 2</li>
-      <li>Service 3</li>
+      <li>Provide consultation services 1</li>
+      <li>Get the market to your home 2</li>
+      <li>Take your orders and deliver the exact things you need 3</li>
       <!-- Add more services as needed -->
     </ul>
   </section>
-  <section id="contact">
+  <section id="Contact">
     <h2>Contact Us</h2>
     <p>If you have any questions or inquiries, feel free to reach out to us.</p>
-    <p>Email: info@gojic.com</p>
-    <p>Phone: 123-456-7890</p>
+    <p>Email: gojicincorporated@gmail.com</p>
+    <p>Phone: 07037561027</p>
   </section>
   <footer>
     <p>&copy; 2023 GOJIC INCORPORATED. All rights reserved.</p>
